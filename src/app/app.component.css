@@ -1,0 +1,64 @@
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: deepskyblue;
+   color: white;
+   text-align: center;
+}
+.button {
+  padding: 10px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #818181;
+  background-color: navy;
+  border: none;
+
+ 
+}
+/*.button:hover {background-color: grey}*/
+h3{
+  color: white;
+}
+.button:active {
+  background-color: navy;
+ 
+  transform: translateY(4px);
+}
+div{
+  text-align: left;
+  vertical-align: 20%;
+}
+
+.back{
+  right: 0cm;
+}
+.sidenav {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: navy;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+bg{
+   background-image: url("../assets/download.jpg");
+   background-repeat: no-repeat;
+   margin: 250px;
+ 
+}

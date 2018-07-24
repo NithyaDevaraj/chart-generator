@@ -1,0 +1,25 @@
+ 
+<div>
+<input  type="file" (change)="onFileChange($event)" multiple="false" />
+
+
+ 
+    <kendo-chart #chart style='width: 50%; position : center'>
+       <kendo-chart-title text="ISSUES IDENTIFIED"></kendo-chart-title>
+      <kendo-chart-category-axis>
+           <kendo-chart-legend position="bottom" orientation="horizontal" draggable="false"></kendo-chart-legend>
+          <kendo-chart-category-axis-item [labels]="{ format: 'd', rotation: 'auto' }" style="font-weight:bold;" [categories]="categories">
+          </kendo-chart-category-axis-item>
+           
+      </kendo-chart-category-axis>
+     
+          <kendo-chart-series>
+            <kendo-chart-series-item type="column"  color="skyblue" opacity="0.8" [name] ="app" [data]="arr_names" [labels]="valueAxisLabels" ><kendo-chart-series-item-labels visible="true"></kendo-chart-series-item-labels>
+            </kendo-chart-series-item>
+          </kendo-chart-series>
+        </kendo-chart>
+     <button class="button" (click)="exportChart()">
+      Export as Image
+    </button>
+
+</div>

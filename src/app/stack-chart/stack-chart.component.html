@@ -1,0 +1,39 @@
+ 
+<div>
+<input  type="file" (change)="onFileChange($event)" multiple="false" />
+
+
+
+    <kendo-chart #chart style='width: 50%; position : center'>
+       <kendo-chart-title [text] ="status"></kendo-chart-title>
+      <kendo-chart-category-axis>
+           
+          <kendo-chart-category-axis-item [labels]="{ format: 'd', rotation: 'auto' }" style="font-weight:bold;" [categories]="cat">
+          </kendo-chart-category-axis-item>
+           
+      </kendo-chart-category-axis>
+     
+          <kendo-chart-series>
+           
+            <kendo-chart-series-item type="column"  color="lavenderblush" [stack]="true" opacity="1" [name] ="r" [data]="ri"  >  
+          </kendo-chart-series-item>
+            <kendo-chart-series-item type="column" color="deepskyblue" [stack]="true" opacity="0.4" [name] ="q" [data]="qi"  >  
+          </kendo-chart-series-item>
+            <kendo-chart-series-item type="column" color="coral" [stack]="true" opacity="0.5" [name] ="o" [data]="oi"  >  
+          </kendo-chart-series-item>
+            <kendo-chart-series-item type="column" color="aquamarine" [stack]="true" opacity="0.6" [name] ="i" [data]="ii"  >  
+
+            </kendo-chart-series-item>
+              <kendo-chart-series-item type="column" color="red" [stack]="true"  opacity="0.6" [name] ="d" [data]="di" > 
+      
+                
+            </kendo-chart-series-item>
+            
+          </kendo-chart-series>
+
+     
+        </kendo-chart>
+     <button class="button" (click)="exportChart()">
+      Export as Image
+    </button>
+</div>
