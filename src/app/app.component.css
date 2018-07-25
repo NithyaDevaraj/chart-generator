@@ -56,9 +56,11 @@ div{
     color: #818181;
     display: block;
 }
-bg{
-   background-image: url("../assets/download.jpg");
-   background-repeat: no-repeat;
-   margin: 250px;
+.image{
+      float: right;
+    margin-top: 280px;
+    width: 35%;
+    opacity: .8;
+  
  
 }
